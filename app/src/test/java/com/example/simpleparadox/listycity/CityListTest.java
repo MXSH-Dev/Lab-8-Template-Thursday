@@ -20,8 +20,9 @@ class CityListTest {
     @Test
     void testAdd() {
         CityList cityList = mockCityList();
-
-        assertEquals(1, cityList.countCities());
+// change this to fail on purpose
+//        real expected = 1, change to 0 for lab 8 purpose
+        assertEquals(0, cityList.countCities());
 
         cityList.add(new City("Regina", "Saskatchewan"));
 
