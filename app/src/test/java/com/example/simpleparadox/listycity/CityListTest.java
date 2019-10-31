@@ -25,8 +25,8 @@ class CityListTest {
         assertEquals(0, cityList.countCities());
 
         cityList.add(new City("Regina", "Saskatchewan"));
-
-        assertEquals(2, cityList.countCities());
+// expected 2, change to 1 to fail the test
+        assertEquals(1, cityList.countCities());
         assertTrue(cityList.hasCity(new City("Regina", "Saskatchewan")));
     }
 
