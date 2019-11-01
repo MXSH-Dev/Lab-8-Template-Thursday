@@ -22,11 +22,11 @@ class CityListTest {
         CityList cityList = mockCityList();
 // change this to fail on purpose
 //        real expected = 1, change to 0 for lab 8 purpose
-        assertEquals(0, cityList.countCities());
+        assertEquals(1, cityList.countCities());
 
         cityList.add(new City("Regina", "Saskatchewan"));
 // expected 2, change to 1 to fail the test
-        assertEquals(1, cityList.countCities());
+        assertEquals(2, cityList.countCities());
         assertTrue(cityList.hasCity(new City("Regina", "Saskatchewan")));
     }
 
